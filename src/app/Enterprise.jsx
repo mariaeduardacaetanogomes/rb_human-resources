@@ -7,7 +7,7 @@ const Enterprise = () => {
 
     const handleWhatsAppContact = () => {
         // Substitua pelo seu número de WhatsApp
-        const phoneNumber = "5512981475233"; // Formato: código do país + número
+        const phoneNumber = "5512991806648"; // Formato: código do país + número
         const message = encodeURIComponent("Olá! Sou uma empresa interessada nos seus serviços de recrutamento.");
         window.open(`https://wa.me/${phoneNumber}?text=${message}`, '_blank');
     };
@@ -17,7 +17,7 @@ const Enterprise = () => {
         const email = "contato@empresa.com";
         const subject = encodeURIComponent("Contato Empresarial - Serviços de Recrutamento");
         const body = encodeURIComponent("Olá!\n\nSou uma empresa interessada nos seus serviços de recrutamento e gostaria de obter mais informações.\n\nAguardo retorno.\n\nAtenciosamente,");
-        window.open(`mailto:${email}?subject=${subject}&body=${body}`, '_blank');
+        window.open(`https://mail.google.com/mail/?view=cm&fs=1&to=${email}.com&su=${subject}&body=${body}`);
     };
 
     return (
