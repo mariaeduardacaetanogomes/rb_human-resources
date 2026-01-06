@@ -112,11 +112,6 @@ const StorageInitializer = ({ children }) => {
             </>
         );
     }
-
-    // Interface de configuração do storage
-    return (
-        {children}
-    );
 };
 
 export default StorageInitializer;
