@@ -98,6 +98,25 @@ const StorageInitializer = ({ children }) => {
         checkStorageStatus();
     }, []);
 
+    // Se o storage está inicializado, renderizar os children normalmente
+    if (storageStatus.initialized) {
+        return (
+            <>
+                <div className="fixed top-4 right-4 z-50 bg-green-50 border border-green-200 rounded-lg p-3 shadow-lg">
+                    <div className="flex items-center gap-2">
+                        <CheckCircle className="text-green-600" size={20} />
+                        <span className="text-green-800 text-sm font-medium">Storage OK</span>
+                    </div>
+                </div>
+                {children}
+            </>
+        );
+    }
+
+    // Interface de configuração do storage
+    return (
+        {children}
+    );
 };
 
 export default StorageInitializer;
