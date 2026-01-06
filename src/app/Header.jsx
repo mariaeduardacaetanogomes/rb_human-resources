@@ -8,7 +8,7 @@ const Header = () => {
     const [isPopupOpen, setIsPopupOpen] = useState(false);
     const [copySuccess, setCopySuccess] = useState(false);
     
-    const companyEmail = "contato@suaempresa.com";
+    const companyEmail = "rbrecursoshumanos.tte@gmail.com";
     
     const handleCopyEmail = async () => {
         try {
